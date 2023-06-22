@@ -48,6 +48,8 @@ void push(stack_t **stack, unsigned int num);
 void pall(stack_t **stack, unsigned int num);
 void pint(stack_t **stack, unsigned int num);
 void pop(stack_t **stack, unsigned int num);
+void add(stack_t **stack, unsigned int num);
+void nop(stack_t **stack, unsigned int num);
 
 int main(int argc, char **argv);
 void open_file(char *f_name);
