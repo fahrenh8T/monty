@@ -47,7 +47,7 @@ void pall(stack_t **stack, unsigned int num)
 
 	while (crrnt != NULL)
 	{
-		fprint(stdout, "%d\n", crrnt->n);
+		fprintf(stdout, "%d\n", crrnt->n);
 		crrnt = crrnt->next;
 	}
 }

@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 2)
 		error_output(1);
-	op_file(argv[1]);
+	open_file(argv[1]);
 	free_node();
 	return (0);
 }
