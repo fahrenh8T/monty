@@ -14,7 +14,7 @@ void error_output(unsigned int error_c, ...)
 	switch (error_c)
 	{
 		case 1:
-			fprintf(stderr, "USagE: monty file\n");
+			fprintf(stderr, "USAGE: monty file\n");
 			break;
 		case 2:
 			fprintf(stderr, "Error: Can't open file %s\n",
