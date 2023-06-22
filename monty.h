@@ -42,5 +42,5 @@ void free_node(void);
 void error_output(unsigned int error_c, ...);
 void error_output2(unsigned int error_c, ...);
 void search_func(char *opcode, char *comd, int n_line, int format);
-void find_function(op_func f, char *op_code, char *cmd, int n_line, int format);
+void find_function(op_func f, char *op_code, char *cmd, int n_line, int frmat);
 #endif /*MONTY_H*/
