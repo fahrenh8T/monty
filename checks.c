@@ -7,7 +7,7 @@
  * @n_line: Line number 4 the opcode.
  * @format: Format specifier should be 0 for Stack or 1 for Queue.
  */
-void search_func(char *opcode, char *cod, int n_line, int format)
+void srch_func(char *opcode, char *cod, int n_line, int format)
 {
 	int i;
 	int error;
@@ -20,6 +20,9 @@ void search_func(char *opcode, char *cod, int n_line, int format)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
+		{"div", div},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 	if (opcode[0] == '#')

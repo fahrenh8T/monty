@@ -48,8 +48,14 @@ void push(stack_t **stack, unsigned int num);
 void pall(stack_t **stack, unsigned int num);
 void pint(stack_t **stack, unsigned int num);
 void pop(stack_t **stack, unsigned int num);
+void swap(stack_t **stack, unsigned int num);
 void add(stack_t **stack, unsigned int num);
 void nop(stack_t **stack, unsigned int num);
+
+void sub(stack_t **stack, unsigned int num);
+void div(stack_t **stack, unsigned int num);
+void mul(stack_t **stack, unsigned int num);
+void add_queue(stack_t **stack, unsigned int num);
 
 int main(int argc, char **argv);
 void open_file(char *f_name);
@@ -59,6 +65,7 @@ stack_t *new_node(int n);
 void free_node(void);
 void error_output(unsigned int error_c, ...);
 void error_output2(unsigned int error_c, ...);
-void search_func(char *opcode, char *comd, int n_line, int format);
+void srch_func(char *opcode, char *comd, int n_line, int format);
 void find_function(op_func f, char *op_code, char *cmd, int n_line, int frmat);
+
 #endif /*MONTY_H*/
