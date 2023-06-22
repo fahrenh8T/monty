@@ -70,7 +70,7 @@ int interp_line(char *string, int n_line, int format)
 	else if (strcmp(op_code, "stack") == 0)
 		return (0);
 
-	srch_func(op_code, comd, n_line, format);
+	search_func(op_code, comd, n_line, format);
 	return (format);
 }
 

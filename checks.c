@@ -20,9 +20,6 @@ void search_func(char *opcode, char *cod, int n_line, int format)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
-		{"sub", sub},
-		{"div", divi},
-		{"mul", mult},
 		{NULL, NULL}
 	};
 	if (opcode[0] == '#')
