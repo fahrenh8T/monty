@@ -48,9 +48,9 @@ void search_func(char *opcode, char *cod, int n_line, int format)
  * @op_code: pointer to a string representing the opcode
  * @cod: pointer to a string
  * @n_line: line number for the instruction
- * @format: the format specifier
+ * @frmat: the format specifier
  */
-void find_function(op_func f, char *op_code, char *cod, int n_line, int format)
+void find_function(op_func f, char *op_code, char *cod, int n_line, int frmat)
 {
 	stack_t *node;
 	int error;
@@ -81,9 +81,9 @@ void find_function(op_func f, char *op_code, char *cod, int n_line, int format)
 		}
 
 		node = new_node(atoi(cod) * error);
-		if (format == 0)
+		if (frmat == 0)
 			f(&node, n_line);
-		if (format == 1)
+		if (frmat == 1)
 			add_queue(&node, n_line);
 	}
 	else
