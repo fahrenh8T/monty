@@ -28,12 +28,12 @@ void sub(stack_t **stack, unsigned int num)
  * @stack: pointer to the top of the stack
  * @num: line number of the opcode
 */
-void div(stack_t **stack, unsigned int num)
+void divd(stack_t **stack, unsigned int num)
 {
 	int rslt;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-		error_output2(8, num, "div");
+		error_output2(8, num, "divd");
 
 	if ((*stack)->n == 0)
 	{
@@ -52,12 +52,12 @@ void div(stack_t **stack, unsigned int num)
  * @stack: pointer of the top of the stack
  * @num: line number of the opcode
 */
-void mul(stack_t **stack, unsigned int num)
+void mult(stack_t **stack, unsigned int num)
 {
 	int rslt;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-		error_output2(8, num, "mul");
+		error_output2(8, num, "mult");
 
 	(*stack) = (*stack)->next;
 	rslt = (*stack)->n * (*stack)->prev->n;

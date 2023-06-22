@@ -53,8 +53,8 @@ void add(stack_t **stack, unsigned int num);
 void nop(stack_t **stack, unsigned int num);
 
 void sub(stack_t **stack, unsigned int num);
-void div(stack_t **stack, unsigned int num);
-void mul(stack_t **stack, unsigned int num);
+void divd(stack_t **stack, unsigned int num);
+void mult(stack_t **stack, unsigned int num);
 void add_queue(stack_t **stack, unsigned int num);
 
 int main(int argc, char **argv);
