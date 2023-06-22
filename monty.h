@@ -31,5 +31,16 @@ typedef struct instruction_s
 		void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+extern stack_t *head;
 
+int main(int argc, char **argv);
+void open_file(char *f_name);
+void read_file(FILE *fd);
+int interp_line(char *string, int n_line, int format);
+stack_t *new_node(int n);
+void free_node(void);
+void error_output(unsigned int error_c, ...);
+void error_output2(unsigned int error_c, ...);
+void search_func(char *opcode, char *comd, int n_line, int format);
+void find_function(op_func f, char *op_code, char *cmd, int n_line, int format);
 #endif /*MONTY_H*/
