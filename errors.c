@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * error_output - handles and prints all error messages
+ * error_output - handles and prints all error messages encountered
  * @error_c: shows the various number of errors encountered
  */
 void error_output(unsigned int error_c, ...)
